@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class first-java {
+
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+
+        double altura;
+        double base;
+        double perimetro;
+        double area;
+
+// isso acima significa a entrada dos dados
+
+System.out.println("Coloque o valor da altura: ");
+altura= keyboard.nextDouble();
+System.out.println("Coloque o valor da base: ");
+base= keyboard.nextDouble();
+
+// isso acima é a parte do processamento de dados
+
+perimetro= 2*base +2*altura;
+area= base*altura;
+
+//isso acima é a saída dos dados
+
+System.out.println("A área é: " +area);
+
+System.out.println("O perímetro é:" +perimetro);
+
+keyboard.close();
+
+    }
