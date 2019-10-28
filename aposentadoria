@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class aposentadoria {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		int anostrabalhados, idade;
+		
+		System.out.println("Informe sua idade: ");
+		idade = teclado.nextInt();
+		
+		System.out.println("Informe seus anos de trabalhados: ");
+		anostrabalhados = teclado.nextInt();
+		
+		if (idade >= 65) {
+			
+			System.out.println("Requerer aposentadoria");	
+			
+		} else if ( anostrabalhados >= 30) {
+			
+			System.out.println("Requerer aposentadoria");	
+			
+		} else if ( idade >= 60 && anostrabalhados >=25) {
+			
+			System.out.println("Requerer aposentadoria");	
+			
+		} else {
+			
+			System.out.println("Não requerer");	
+		}
+			
+	}
+
+}
