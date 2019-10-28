@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class custocarro {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		double custocons, custofab, comissaodist, imposto;
+		
+		System.out.println("Informe o custo de fábrica: ");
+		custofab = teclado.nextDouble();
+
+		if (custofab <= 12000) {
+			
+			comissaodist = (custofab/100) * 5;
+			imposto = 0;
+			custocons = custofab + comissaodist + imposto;
+			System.out.println("O custo do consumidor é: " + custocons);
+			
+				
+		} if (custofab > 12000 && custofab <= 25000) {
+			
+			comissaodist = (custofab/100) * 10;
+			imposto = (custofab/100) * 15;
+			custocons = custofab + comissaodist + imposto;
+			System.out.println("O custo do consumidor é: " + custocons);
+			
+		
+			
+		} if (custofab > 250000) {
+			
+			comissaodist = (custofab/100) * 15;
+			imposto = (custofab/100) * 20;
+			custocons = custofab + comissaodist + imposto;
+			System.out.println("O custo do consumidor é: " + custocons);
+			
+		
+		}
+
+ }
+	
+}
